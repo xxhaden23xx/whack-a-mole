@@ -94,4 +94,30 @@ To complete Part III, fulfill the following requirements:
 
 ### Part IV JS
 
-To complete Part IV, fulfill the following requirements: 
+To complete Part IV, fulfill the following requirements:
+
+1. Create a ```window.onload``` function that will run your function when the window loads as follows:
+
+``` javascript
+window.onload = function() {
+  //Place the rest of your code in here.
+}
+```  
+
+2. Create a ```variable``` named "dirt" that will store the dirt elements by class name.
+
+3. Create a ```variable``` named "sound" that will store the audio element by id.
+
+4. Create a ```variable``` named "grid" that will store the "dirt-box" element by id.
+
+5. Add ```Event Listeners``` to all dirt elements that will listen for a click. In each Event Listener, create the following:
+* An ```if statement``` that checks if anything exists in the dirt's innerHTML. If so, play the audio and reset the innerHTML so nothing is inside (clear the mole out!). Else, ```console.log``` that nothing is there.
+
+6. Create a ```function``` called setMole. In this function, create the following:
+* Create a ```variable``` called mole that will store a newly created ```div``` element.
+* Set the "id" to "mole".
+* Create a variable to store a random integer from 0 to the length of the dirt array.
+* Create an if statement that checks if there is nothing in the innerHTML a random dirt pile, append the mole to that dirt pile. Else, ```console.log``` "There are too many moles!".
+
+## Stretch Goals
+1. Add to this game by making it so that if there are 2 moles next to each other after 3 seconds, append a new dirt mound to the dirt box that a mole can come out from! 
