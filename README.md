@@ -119,5 +119,7 @@ window.onload = function() {
 * Create a variable to store a random integer from 0 to the length of the dirt array.
 * Create an if statement that checks if there is nothing in the innerHTML a random dirt pile, append the mole to that dirt pile. Else, ```console.log``` "There are too many moles!".
 
+7. We want this function, setMole, to run every 3 seconds! Implement the code to do that. 
+
 ## Stretch Goals
-1. Add to this game by making it so that if there are 2 moles next to each other after 3 seconds, append a new dirt mound to the dirt box that a mole can come out from! 
+1. Add to this game by making it so that if there are 2 moles next to each other after 3 seconds, append a new dirt mound to the dirt box that a mole can come out from!
