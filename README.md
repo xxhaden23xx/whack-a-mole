@@ -119,7 +119,63 @@ window.onload = function() {
 * Create a variable to store a random integer from 0 to the length of the dirt array.
 * Create an if statement that checks if there is nothing in the innerHTML a random dirt pile, append the mole to that dirt pile. Else, ```console.log``` "There are too many moles!".
 
-7. We want this function, setMole, to run every 3 seconds! Implement the code to do that. 
+7. We want this function, setMole, to run every 3 seconds! Implement the code to do that.
 
 ## Stretch Goals
-1. Add to this game by making it so that if there are 2 moles next to each other after 3 seconds, append a new dirt mound to the dirt box that a mole can come out from!
+1. Add to this game by making it so that if there are neighboring moles in a row, append a new dirt mound to the dirt box that a mole can come out from! Follow the guidelines below:
+
+1. Modify your HTML to look like the following:
+``` html
+<div id="container">
+  <audio src="assets/whack.mp3" id="sound"></audio>
+  <div id="dirt-box">
+    <div class="row" id="row0-container">
+      <div class="dirt row0"></div>
+      <div class="dirt row0"></div>
+      <div class="dirt row0"></div>
+    </div>
+
+    <div class="row" id="row1-container">
+      <div class="dirt row1"></div>
+      <div class="dirt row1"></div>
+      <div class="dirt row1"></div>
+    </div>
+
+    <div class="row" id="row2-container">
+      <div class="dirt row2"></div>
+      <div class="dirt row2"></div>
+      <div class="dirt row2"></div>
+    </div>
+
+  </div>
+</div>
+```
+
+2. Modify the "dirt-box" in your CSS to look like the following:
+``` CSS
+#dirt-box {
+  min-height: 500px;
+  max-width: calc(100vw);
+  max-height: calc(100vh);
+  background-color: rgb(127, 204, 51);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 10px solid darkgreen;
+}
+```
+
+3. Look at the stretch-goal.js file and follow the code comments. Save it to your file structure and change the source of the script file in the index.html to this js file so that your original code is preserved.
+
+In this JS file, you will create new or modified functions with what its doing explained as follows: 
+
+* **checkNeighbor(row, pos)**
+  * Takes in a row and position to check. If the most recently added mole is in the first row at the 2nd hole, it will check if it has neighbors to the right or left of it. If there is a neighbor, it will invoke a function to create and append a new dirt hole at a random row (newDirt(row)).
+
+* **newDirt(row)**
+  * Takes in a random row to append a newDirt to. This function will create a new dirt hole, make sure this dirt hole has the correct class names, and also that it is clickable and "hammerable".
+
+* **setMole()**
+  * The modified set mole sets a new mole to a random row and position.
