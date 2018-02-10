@@ -169,7 +169,7 @@ window.onload = function() {
 
 3. Look at the stretch-goal.js file and follow the code comments. Save it to your file structure and change the source of the script file in the index.html to this js file so that your original code is preserved.
 
-In this JS file, you will create new or modified functions with what its doing explained as follows: 
+In this JS file, you will create new or modified functions with what its doing explained as follows:
 
 * **checkNeighbor(row, pos)**
   * Takes in a row and position to check. If the most recently added mole is in the first row at the 2nd hole, it will check if it has neighbors to the right or left of it. If there is a neighbor, it will invoke a function to create and append a new dirt hole at a random row (newDirt(row)).
@@ -179,3 +179,11 @@ In this JS file, you will create new or modified functions with what its doing e
 
 * **setMole()**
   * The modified set mole sets a new mole to a random row and position.
+
+## Stretchy Stretch Goal
+
+Modify your whac-a-mole into a Pokemon whac-a-mole game or any other character whac-a-mole game.
+
+1. Change aspects in your setMole() function so that the mole is an image of your character instead!
+2. Randomize what characters get placed!
+3. Keep track of points! If it's a special character that gets whacked, give more points. Give your users a way to view how many points they've earned so far. 
