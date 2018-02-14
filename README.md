@@ -186,4 +186,12 @@ Modify your whac-a-mole into a Pokemon whac-a-mole game or any other character w
 
 1. Change aspects in your setMole() function so that the mole is an image of your character instead!
 2. Randomize what characters get placed!
-3. Keep track of points! If it's a special character that gets whacked, give more points. Give your users a way to view how many points they've earned so far. 
+3. Keep track of points! If it's a special character that gets whacked, give more points. Give your users a way to view how many points they've earned so far.
+  * Create a variable to store your score display.
+  * Create a variable called score and set it equal to 0.
+  * In your ```setMole()``` function, give your mole an id of the current Pokemon's name.
+  * Create a function called ```checkPokemon``` that will have a parameter to store the id of the Pokemon.
+    * In this function, create a switch statement that will switch the id of the Pokemon parameter.
+      * If it is a certain Pokemon's name, add to the score a certain amount of points! (E.g. case: 'pikachu', score += 3)
+      * In the places where you add an Event Listener, use the newly created checkPokemon(idOfPokemon) function to update the score variable accordingly. How do we get the id of dirt[i]? ```dirt[i].childNodes``` returns a nodelist. How do we access the id of the element we want?
+      * After the score has been correctly updated, update the ```innerHTML``` of the score display. 
