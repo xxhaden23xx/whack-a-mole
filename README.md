@@ -36,7 +36,7 @@ To complete Part II, fulfill the following requirements:
 * ```audio``` with ```id``` of "sound" and ```src``` to the whack.mp3 sound file.
 * ```div``` with ```id``` of "dirt-box".
   * ```div``` with ```class``` of "row".
-    * ```div``` with ```class``` of "dirt".
+    * ```div``` with ```class``` of "dirt"./
     * ```div``` with ```class``` of "dirt".
     * ```div``` with ```class``` of "dirt".
   * ```div``` with ```class``` of "row".
@@ -56,7 +56,7 @@ To complete Part III, fulfill the following requirements:
 
 1. Target the ```id``` of "container".
 * Set the ```width``` to the full view width of the window.
-* Set the ```height``` to the full view height of the window.
+* Set the ```height``` to the full view height of the window. 
 * Activate flexbox!
 * CENTER the items HORIZONTALLY using Flexbox.
 * CENTER the items VERTICALLY using Flexbox.
